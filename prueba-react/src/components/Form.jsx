@@ -9,7 +9,7 @@ const Form = () => {
         {todo: 'todo 3'}
     ])
 
-    const handleChange = e => setTodo({[e.targe.name]: e.target.value})
+    const handleChange = e => setTodo({[e.target.name]: e.target.value})
     const handleClick = e => {
         if(Object.keys(todo).length === 0 || todo.todo.trim() === ''){
             alert('el campo no puede estar vacio')
